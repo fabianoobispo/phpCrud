@@ -1,0 +1,43 @@
+PARA CRIAR TABELAS XXXXX e id com  CHAVE PRIMARIA  e AUTO_INCREMENT
+
+CREATE TABLE Clientes(
+    ID INTEGER AUTO_INCREMENT,
+    Nome VARCHAR(100),
+    Email VARCHAR(100),
+    Endereco VARCHAR(100),
+    Cidade VARCHAR(100),
+    UF VARCHAR(2),
+    PRIMARY KEY(ID)
+);
+
+
+CREATE TABLE Produtos(
+    ID INTEGER AUTO_INCREMENT,
+    Produto VARCHAR(100),
+    Preco DECIMAL(6,2),
+    Quantidade INT,
+    Descricao VARCHAR(100),
+    PRIMARY KEY(ID)
+);
+
+CREATE TABLE Vendas(
+    ID INTEGER AUTO_INCREMENT,
+    ProdutoID INTEGER,
+    ClienteID INTEGER,
+    QuantidadeVenda INT,
+    PRIMARY KEY(ID),
+    FOREIGN KEY (ProdutoID) REFERENCES Produtos(ID),
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
+);
+
+
+//pegar tres tabelas
+
+SELECT 
+    C.Nome as "NomeCliente", p.Produto as "Produto", p.Preco as "Preco", v.QuantidadeVenda as "Quantidade", 
+    v.ID 
+FROM vendas as v 
+INNER JOIN produtos as p
+    ON v.ProdutoID = p.ID
+INNER JOIN clientes as c
+    ON c.ID = v.ClienteID

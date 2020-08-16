@@ -1,0 +1,41 @@
+Projeto 1 
+
+	1) Construir um CRUD para gerenciamento de clientes.
+		- Tela em HTML com bootstrap, importante ser responsivo. 
+		- Requisições para transferencias de informações via Javascript.
+		- O BackEnd deverá ser feito com PHP e MySQL. (puro, não usar nenhum framework)
+
+	2) Construir um CRUD para gerenciamento de Produtos e Estoque.
+		- Tela em HTML com bootstrap, importante ser responsivo.
+		- Requisições para transferencias de informações via Javascript.
+		- O BackEnd deverá ser feito com PHP e MySQL. (puro, não usar nenhum framework)
+
+
+	3) Construir um CRUD para gerenciamento de Venda, onde ao definir o cliente é possivel inserir varios produtos e quantidades no carrinho e até retira-los.
+	Apresentando no final o valor total da compra.
+		- Tela em HTML com bootstrap, importante ser responsivo.
+		- Requisições para transferencias de informações via Javascript.
+		- O BackEnd deverá ser feito com PHP e MySQL. (puro, não usar nenhum framework)
+
+
+	4) Gerar relatorio de vendas, clientes e produtos em PDF.
+
+
+
+Projeto 2 
+
+	Teste de integração de API:
+
+	-> Objetivo: Realizar uma requisição de busca de um planeta na API Star Wars.
+	Como: Atraves desse link: https://swapi.dev/api/planets/1/ é possivel buscar uma informação de um planeta na API Star Wars. 
+	O fazer: É preciso recuperar o JSON que retorna no link acima e mostrar na tela, sem necessidade de muito tratamento.
+	Link da API: https://swapi.dev/
+
+
+
+	Nos enviar as anotações utilizadas, código fonte e banco de dados modelado.
+
+
+	Prazo : 3 dias
+
+	Enviar em compactado em zip.
